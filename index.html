@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Apps scope</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <script src="libs/scripts/jquerry.js"></script>
+  <!-- <link rel="stylesheet" href="libs/styles/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="libs/rtl_bootstrap/bootstrap.min.css">
+  <script src="libs/scripts/popper.min.js"></script>
+  <!-- <script src="libs/scripts/bootstrap.bundle.min.js"></script>  -->
+  <script src="libs/rtl_bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="/libs/scripts/vue.js"></script>
+  <script src="/libs/scripts/vue_loader.js"></script>
+  <link rel="stylesheet" href="libs/styles/toastify.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <script src="libs/scripts/toastify-js.js"></script>
+  <style>
+    body {
+      /* user-select: none; */
+    }
+  </style>
+
+</head>
+
+<body style="background-color:#EFEFEF;">
+
+  <div id="app">
+
+    <app></app>
+
+  </div>
+
+</body>
+
+
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+
+    },
+    components: {
+      'app': httpVueLoader('/components/main/app.vue')
+    },
+    methods: {
+
+    }
+  })
+</script>
+
+
+
+</html>
